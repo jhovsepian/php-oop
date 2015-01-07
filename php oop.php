@@ -1,3 +1,4 @@
+<?php
 class Turtle{
 	//class body
 	//class body
@@ -131,3 +132,5 @@ $bird1->lastName = "Choo Choo";
 print"The bird's name is {$bird1->getName()}.";
 
 //the Bird's name is Chirp Chirp Choo Choo.
+
+?>
