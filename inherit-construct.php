@@ -6,7 +6,7 @@ class Snake {
 	public $gender;
 	public $weight;
 
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight) {
+	function  __construct($scientificName, $firstName, $lastName, $gender, $weight) {
 		$this->scientificName = $scientificName; 
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
@@ -21,8 +21,8 @@ class Snake {
 		" and this is my scientific-name" . $this->scientificName . " . ";
 	}
 }
-class King Cobra extends Snake {
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight, $hiss){
+class KingCobra extends Snake {
+	function  __construct($scientificName, $firstName, $lastName, $gender, $weight, $hiss){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 		$this->hiss=$hiss;
 	}
@@ -32,7 +32,7 @@ class King Cobra extends Snake {
 }
 
 class Boa extends Snake {
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight, $hiss){
+	function __construct($scientificName, $firstName, $lastName, $gender, $weight, $hiss){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 		$this->hiss=$hiss;
 	}
@@ -41,8 +41,11 @@ class Boa extends Snake {
 		return $this->hiss;
 	}
 }
+$Boa = new Boa("Boa", "Kevin","Thegreatboa", "male", 7, true);
+print " Snake 1 is a " .$Boa->getName();
+
 ?>
--------------------------------------
+<!-- Example 2 -->
 <?php
 class Lizard {
 	public $firstName;
@@ -51,7 +54,7 @@ class Lizard {
 	public $gender;
 	public $weight;
 
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight) {
+	function  __construct($scientificName, $firstName, $lastName, $gender, $weight) {
 		$this->scientificName = $scientificName; 
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
@@ -67,7 +70,7 @@ class Lizard {
 	}
 }
 class Gecko extends Lizard {
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight, $slither){
+	function  __construct($scientificName, $firstName, $lastName, $gender, $weight, $slither){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 		$this->slither=$slither;
 	}
@@ -77,7 +80,7 @@ class Gecko extends Lizard {
 }
 
 class Iguana extends Lizard {
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight, $slither){
+	function  __construct($scientificName, $firstName, $lastName, $gender, $weight, $slither){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 		$this->slither=$slither;
 	}
@@ -86,8 +89,11 @@ class Iguana extends Lizard {
 		return $this->slither;
 	}
 }
+$Gecko = new Gecko("Gecko", "Jeremy", "Kekler", "male", 7, true);
+print " Lizard 1 is a " .$Gecko->getName();
+
 ?>
----------------------------
+<!-- Example 3 -->
 <?php
 class Tiger {
 	public $firstName;
@@ -96,7 +102,7 @@ class Tiger {
 	public $gender;
 	public $weight;
 
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight) {
+	function  __construct($scientificName, $firstName, $lastName, $gender, $weight) {
 		$this->scientificName = $scientificName; 
 		$this->firstName = $firstName;
 		$this->lastName = $lastName;
@@ -111,8 +117,8 @@ class Tiger {
 		" and this is my scientific-name" . $this->scientificName . " . ";
 	}
 }
-class Siberian Tiger extends Tiger {
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight, $roar){
+class SiberianTiger extends Tiger {
+	function __construct($scientificName, $firstName, $lastName, $gender, $weight, $roar){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 		$this->roar=$roar;
 	}
@@ -121,8 +127,8 @@ class Siberian Tiger extends Tiger {
 	}
 }
 
-class White Tiger extends Tiger {
-	function__construct($scientificName, $firstName, $lastName, $gender, $weight, $roar){
+class WhiteTiger extends Tiger {
+	function  __construct($scientificName, $firstName, $lastName, $gender, $weight, $roar){
 		parent::__construct($scientificName, $firstName, $lastName, $gender, $weight);
 		$this->roar=$roar;
 	}
@@ -131,4 +137,6 @@ class White Tiger extends Tiger {
 		return $this->roar;
 	}
 }
+$WhiteTiger = new WhiteTiger("WhiteTiger", "Jeff", "Anderson", "white", 7, true);
+print " Tiger 1 is a " .$WhiteTiger->getName();
 ?>
